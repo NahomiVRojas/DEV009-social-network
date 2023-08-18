@@ -109,7 +109,6 @@ form {
 .show-password {
   color: #301B3F;
   margin-top: 5px;
-  font-weight: bolder;
 }
 
 .show-password input {
@@ -125,7 +124,6 @@ form {
 
 .show-password input:checked {
   border: 8px solid #301B3F;
-
 }
 
 .forgot-password {
@@ -288,8 +286,8 @@ form {
 .gg-close-o {
   box-sizing: border-box;
   position: absolute;
-  left: 85%;
-  bottom: 51rem;
+  left: 80%;
+  bottom: 46rem;
 }
 
 .gg-close-o:hover {
@@ -560,6 +558,18 @@ form {
   height: 700px;
 }
 
+.profile-title {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: 'Satisfy', cursive;
+  color: #B4A5A5;
+  align-self: flex-end;
+  position: absolute;
+  top: 0;
+  margin-top: 15px;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .div-info-user {
   display: flex;
   align-items: center;
@@ -624,41 +634,57 @@ form {
   width: 15rem;
 }
 
-@media (min-width: 1025px){
-  /*HOME*/
+@media (max-width: 1920px) and (min-width: 1025px) {
+/*HOME*/
+body {
+  background-size: cover;
+}
+
 main {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 780px;
-  width: 50%;
-  margin-left: 25%;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+  font-family: 'Glegoo', serif;
+  height: 80vh;
+  margin: 10vh 30vw;
 }
 
 h1 {
-  font-size: 85px;
+  font-size: 3.5rem;
+  margin-top: 1.5rem;
 }
 
 #slogan-home {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .btn-home-login,
 .btn-home-join,
 .btn-home-google {
-  width: 22rem;
-  font-size: 1.2rem;
+  width: 20rem;
+  font-size: 1rem;
+}
+
+.btn-home-google {
+  margin-bottom: 1.8rem;
 }
 
 /*LOGIN - JOIN*/
 h3 {
   display: grid;
-  font-size: 45px;
+  font-size: 2rem;
   font-weight: bold;
-  line-height: 1.5;
-  width: 30rem;
-  margin-bottom: 2rem;
-  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#logo-login-join {
+  width: 230px;
+  height: auto;
+  margin: 2vh 0;
 }
 
 .input-login-join-name,
@@ -666,49 +692,74 @@ h3 {
 .input-login-join-password,
 .input-login-email,
 .input-login-password {
-  width: 350px;
+  margin-bottom: 0;
+  width: 20vw;
+}
+
+.show-password {
+  font-size: 0.8rem;
 }
 
 .button-login,
 .button-return,
 .btn-post {
-  margin-top: 35px;
+  margin-top: 1vh;
+}
+
+.forgot-password {
+  margin-bottom: 1vh;
+  font-size: 0.8rem;
 }
 
 /*MODAL*/
-.modal-content, .edit-box-content {
+.modal-content {
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 35rem;
+  width: 30vw;
 }
 
 .modal-content p {
   font-size: 0.95rem;
 }
 
-.modal-input, .edit-text {
-  width: 30rem;
+.modal-input {
+  width: 30vw;
   font-size: 0.9rem;
 }
 
 .modal-title {
-  font-size: 32 px;
+  font-size: 2rem;
 }
 
 .gg-close-o {
-  bottom: 53rem;
-  left: 68rem;
+  bottom: 40rem;
+  left: 60rem;
+}
+
+.edit-box-content {
+  width: 30vw;
+}
+
+.edit-text {
+  width: 25vw;
+  height: 50vh;
+}
+
+.confirm-edit, .cancel-edit, .edit-title, .edit-text {
+  font-size: 1rem;
+}
+
+.cancel-ok-button {
+  margin-left: 4.5rem;
 }
 
 /*TIMELINE*/
 .timeline-title {
   font-size: 2rem;
-  width:70%;
-  display: flex;
-  justify-content: start;
+  margin: 1rem 50rem;
   position: fixed;
 }
 
@@ -717,8 +768,8 @@ h3 {
 }
 
 .main-section, .main-section-user-posts {
-  width: 50%;
-  height: 29%;
+  width: 55%;
+  height: 40%;
   margin-left: 22%;
 }
 
@@ -738,14 +789,8 @@ h3 {
 }
 
 .btn-post {
-  margin-top: 15px;
-  position: relative;
-  left: calc(40% - 20px);
-  width: 5rem;
-  height: 2rem;
-  font-weight: bolder;
-  font-size: small;
-  margin-left: 2rem;
+  margin: 1rem 0 1rem 3rem;
+  font-size: 1rem;
 }
 
 /*All Posts*/
@@ -761,7 +806,6 @@ h3 {
 
 .author {
   font-size: 1.9rem;
-  margin-bottom: 0;
 }
 
 .title-post {
@@ -769,6 +813,11 @@ h3 {
   width: 100%; 
   height: 2rem;
   padding-top: 0.2rem;
+}
+
+.content {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .div-reaction {
@@ -787,14 +836,15 @@ h3 {
 
 /*NAVBAR*/
 .sidenav {
-  height: 30rem;
+  height: 31.9rem;
   width: 20%;
-  top: 6rem;
+  top: 5rem;
   left: 3rem;
   border-radius: 15px;
   background-color:#1B1021;
   display: block;
   padding-top: 1rem;
+  border: #B4A5A5 solid 1px;
 }
 
 .sidenav .gg-close-o {
@@ -836,18 +886,25 @@ h3 {
 }
 
 .sign-out-div {
-  margin-top: 200px;
+  margin-top: 15rem;
 }
 
 /* PERFIL */
 .main-perfil{
-  width: 50%;
-  height: 29%;
+  width: 55%;
+  height: 10%;
   margin-left: 25%
+}
+
+.profile-title {
+  font-size: 2rem;
+  margin: 1rem 59rem;
+  position: fixed;
 }
 
 .div-info-user {
   width: 25rem;
+  height: 30rem;
   margin-top: 3rem;
 }
 
@@ -862,8 +919,304 @@ h3 {
 
 .text-input{
   font-size: 1.2rem;
-  font-weight: bold;
   width: 25rem;
 }
 
+}
+
+@media (max-width: 2560px) and (min-width: 1921px) {
+
+  body {
+    background-size: cover;
+  }
+  /*HOME*/
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    margin: 10vh 30vw;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  #slogan-home {
+    font-size: 2.5rem;
+  }
+
+  #logo-home {
+    width: 28rem;
+    height: auto;
+    margin: 2rem;
+  }
+
+  .btn-home-login,
+  .btn-home-join,
+  .btn-home-google,
+  .input-login-join-name,
+  .input-login-join-email,
+  .input-login-join-password,
+  .input-login-email,
+  .input-login-password {
+    width: 31rem;
+    font-size: 1.6rem;
+  }
+
+  /*LOGIN - JOIN*/
+  h3 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    margin-top: 0;
+  }
+
+  #logo-login-join {
+    width: 25rem;
+    height: auto;
+    margin: 2vh 0;
+  }
+
+  .show-password {
+    margin: 2rem;
+  }
+
+  .button-end {
+    width: 20rem;
+  }
+
+  .button-login,
+  .button-return,
+  .btn-post {
+    width: 10rem;
+    height: auto;
+    margin: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .forgot-password {
+    font-size: 1rem;
+  }
+
+/*MODAL*/
+.modal-content {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+}
+
+.modal-content p {
+  font-size: 2rem;
+}
+
+.modal-input {
+  width: 30vw;
+  font-size: 1rem;
+}
+
+.modal-title {
+  font-size: 3rem;
+}
+
+.gg-close-o {
+  bottom: 93rem;
+  left: 100rem;
+}
+
+.edit-box-content {
+  width: 30vw;
+}
+
+.edit-text {
+  width: 25vw;
+  height: 50vh;
+}
+
+.confirm-edit, .cancel-edit, .edit-title, .edit-text {
+  font-size: 2rem;
+}
+
+.confirm-edit, .cancel-edit {
+  width: 10rem;
+  height: auto;
+  margin: 2rem;
+}
+
+.modal-btn-ok, .modal-btn-cancel {
+  font-size: 1.5rem;
+  width: 8rem;
+  height: 3rem;
+}
+
+/*TIMELINE*/
+.timeline-title {
+  font-size: 4rem;
+  margin: 2rem 82rem;
+  position: fixed;
+}
+
+.open {
+  display: none;
+}
+
+.main-section, .main-section-user-posts {
+  width: 55%;
+  height: 30%;
+  margin-left: 22%;
+}
+
+.main-section p {
+  font-size: 2rem;
+}
+
+.post-title,
+.post-body {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.post-body {
+  height: 40%;
+  resize: none;
+}
+
+.btn-post {
+  margin: 1rem 0 1rem 3rem;
+  font-size: 2rem;
+}
+
+/*All Posts*/
+.div-user-info {
+  justify-content: space-between;
+}
+
+.user-post-photo {
+  width: 11rem;
+  margin-bottom: 2rem;
+}
+
+.author {
+  font-size: 3rem;
+}
+
+.title-post {
+  font-size: 2rem;
+  width: 100%; 
+  height: 4rem;
+  padding-top: 0.2rem;
+}
+
+.content {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.div-reaction {
+  width: 8rem;
+  height: 3rem;
+}
+
+.reaction-button {
+  font-size: 2rem;
+}
+
+.img-endPost{
+  width: 2rem;
+  height: 2rem;
+}
+
+/*NAVBAR*/
+.sidenav {
+  height: 45rem;
+  width: 20%;
+  top: 10rem;
+  left: 3rem;
+  border-radius: 15px;
+  background-color:#1B1021;
+  display: block;
+  padding-top: 1rem;
+  border: #B4A5A5 solid 2px;
+}
+
+.sidenav .gg-close-o {
+ display: none;
+}
+
+.buttons-nav, .sign-out-button {
+  font-family: 'Glegoo', serif;
+  background: none;
+  border: none;
+  color: #B4A5A5;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.nav-links {
+  display: flex;
+  background-color: none;
+  flex-direction: column;
+  height: 90%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding-top: -10rem;
+}
+
+.icon-navbar {
+  width: 3rem;
+  height: 3rem;
+  padding: 2rem;
+}
+
+.icon-navbar-sign-out {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.sign-out-div {
+  margin-top: 14rem;
+}
+
+/* PERFIL */
+.main-perfil{
+  width: 55%;
+  height: 10%;
+  margin-top: 10rem;
+  margin-left: 25%;
+}
+
+.profile-title {
+  font-size: 4rem;
+  margin: 2rem 100rem;
+  position: fixed;
+}
+
+.div-info-user {
+  width: 40rem;
+  height: 40rem;
+  margin-top: 6rem;
+}
+
+.name-user, .mail-user{
+  width: 35rem;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.photo-user{
+  margin-bottom: 4rem;
+}
+
+.text-input{
+  font-size: 1.5rem;
+  width: 35rem;
+}
+  
 }

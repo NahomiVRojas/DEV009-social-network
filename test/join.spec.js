@@ -47,4 +47,17 @@ describe('función Join', () => {
     close.click();
     expect(navigateToMock).toHaveBeenCalledWith('/login');
   });
+
+  test('Al hacer click en el checkbox se puede mostrar o esconder la contraseña', () => {
+    const checkbox = joinElement.querySelector('.show-password-checkbox');
+    const password = joinElement.querySelector('.input-login-join-password');
+
+    expect(password.type).toBe('password');
+
+    checkbox.click();
+    expect(password.type).toBe('text');
+
+    checkbox.click();
+    expect(password.type).toBe('password');
+  });
 });

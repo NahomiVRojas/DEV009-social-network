@@ -88,6 +88,17 @@ describe('función Login', () => {
       expect(modalMessage.textContent).toBe('¡Que mal! Correo invalido, verifica si lo escribiste bien.');
     }, 100);
   });
-});
 
-// Agregar más tests
+  test('Al hacer click en el checkbox se puede mostrar o esconder la contraseña', () => {
+    const checkbox = loginElement.querySelector('.show-password-checkbox');
+    const password = loginElement.querySelector('.input-login-password');
+
+    expect(password.type).toBe('password');
+
+    checkbox.click();
+    expect(password.type).toBe('text');
+
+    checkbox.click();
+    expect(password.type).toBe('password');
+  });
+});

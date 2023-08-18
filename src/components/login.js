@@ -30,20 +30,19 @@ function login(navigateTo) {
   showPassword.className = 'show-password';
 
   const showPasswordText = document.createElement('label');
+  showPasswordText.className = 'show-password-text';
   showPasswordText.setAttribute('for', 'password-checkbox');
   showPasswordText.textContent = 'Mostrar contraseña';
 
   const showPasswordCheckbox = document.createElement('input');
+  showPasswordCheckbox.className = 'show-password-checkbox';
   showPasswordCheckbox.setAttribute('type', 'checkbox');
   showPasswordCheckbox.setAttribute('name', 'password-checkbox');
 
   showPasswordCheckbox.addEventListener('click', () => {
-    const x = document.querySelector('.input-login-password');
-    if (x.type === 'password') {
-      x.type = 'text';
-    } else {
-      x.type = 'password';
-    }
+    passwordInput.type = passwordInput.type === 'password'
+      ? passwordInput.type = 'text'
+      : passwordInput.type = 'password';
   });
 
   showPassword.append(showPasswordCheckbox, showPasswordText);

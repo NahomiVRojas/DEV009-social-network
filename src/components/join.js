@@ -45,12 +45,9 @@ function join(navigateTo) {
   showPasswordCheckbox.setAttribute('name', 'password-checkbox');
 
   showPasswordCheckbox.addEventListener('click', () => {
-    const x = document.querySelector('.input-login-join-password');
-    if (x.type === 'password') {
-      x.type = 'text';
-    } else {
-      x.type = 'password';
-    }
+    passwordInput.type = passwordInput.type === 'password'
+      ? passwordInput.type = 'text'
+      : passwordInput.type = 'password';
   });
 
   showPassword.append(showPasswordCheckbox, showPasswordText);

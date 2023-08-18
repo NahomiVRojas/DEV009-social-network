@@ -7,7 +7,7 @@ function profile(navigateTo) {
 
   const pageTitle = document.createElement('h2');
   pageTitle.textContent = 'SpookyVerse';
-  pageTitle.className = 'timeline-title';
+  pageTitle.className = 'profile-title';
 
   const menu = document.createElement('nav');
   menu.className = 'sidenav';
