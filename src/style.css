@@ -633,6 +633,530 @@ form {
   color: #301B3F;
   width: 15rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+  body {
+    background-image: url('components/images/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Glegoo', serif;
+}
+/* LOGIN - JOIN MEDIA */
+  main {
+    font-family: 'Glegoo', serif;
+    margin: 20% 6%;
+    width: 42rem;
+    height: 42rem;
+}
+  #slogan-home {
+    font-size: 1.2rem;
+  }
+  
+  #logo-home {
+    width: 30%;
+  }
+
+  .btn-home-login,
+  .btn-home-join,
+  .btn-home-google {
+  padding: 2%;
+  width: 60%;
+  margin-top: 1.3rem;
+  font-size: 1.2rem;
+}
+
+/* JOIN & LOGIN */
+h3 {
+  font-size: 2.4rem;
+}
+
+#logo-login-join {
+  width: 28%;
+  height: auto;
+  margin-top: 2%;
+
+}
+
+.input-login-join-name,
+.input-login-join-email,
+.input-login-join-password,
+.input-login-email,
+.input-login-password {
+  padding: 2%;
+  width: 25rem;
+  font-weight: bolder;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.show-password,
+.show-password-text {
+  color: #301B3F;
+  font-size: 120%;
+  margin-top: 4%;
+}
+
+.forgot-password {
+  margin-top: 2%;
+  font-size: 120%;
+}
+
+.button-end {
+  width: 15rem;
+  margin-bottom: 2%;
+}
+
+.button-login,
+.button-return,
+.btn-post {
+  font-family: 'Glegoo', serif;
+  color: #B4A5A5;
+  background-color: #301B3F;
+  border-radius: 30px;
+  padding: 3px;
+  width: 100px;
+  font-weight: lighter;
+  font-size: 17px;
+  border: none;
+  margin-top: 45px;
+  cursor: pointer;
+}
+
+.button-back {
+  width: 250px;
+}
+
+.button-login:hover,
+.button-return:hover {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*MODAL JOIN*/
+
+.modal, .edit-box {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content, .edit-box-content {
+  margin-top: 10%;
+  padding: 6vw;
+  width: 76%;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-top: 15px;
+}
+
+.modal-title-x {
+  display: flex;
+  justify-content: space-around;
+  width: 35rem;
+}
+
+.modal-title {
+  font-size: 2rem;
+  margin-bottom: 2%;
+  margin-top: 0;
+}
+
+.modal-input, .edit-text {
+  width: 20rem;
+  height: 2rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.edit-title{
+  font-family: 'Glegoo', serif;
+  width: 18rem;
+  height: 10%;
+  font-size: 0.9rem;
+}
+
+.edit-text{
+  width: 25rem;
+  height: 30rem;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.buttons-modal-edit {
+  display: flex;
+  width: 27rem;
+  justify-content: space-around;
+}
+
+.modal-btn,
+.btn-post,
+.modal-btn-ok,
+.modal-btn-cancel,
+.confirm-edit,
+.cancel-edit {
+  margin-top: 0.7rem;
+  width: 30%;
+  height: 15%;
+  font-size: 1rem;
+}
+
+.gg-close-o {
+  box-sizing: border-box;
+  position: absolute;
+  left: 85%;
+  bottom: 58rem;
+}
+
+.gg-close-o:hover {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cancel-ok-button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35rem;
+}
+
+/*TIMELINE*/
+
+.timeline-title {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: 'Satisfy', cursive;
+  color: #B4A5A5;
+  align-self: flex-end;
+  position: absolute;
+
+}
+
+.main-timeline {
+  background: none;
+  box-sizing: content-box;
+  display: flex;
+}
+
+.main-section, .main-section-user-posts {
+  width: 78.5%;
+  height: 17rem;
+  position: absolute;
+  margin-left: 6%;
+}
+
+.main-section-user-posts {
+  background: none;
+}
+
+.main-section p {
+  color: #301B3F;
+  font-size: 0.97rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.post-title,
+.post-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Glegoo', serif;
+  width: 90%;
+  height: 10%;
+  background-color: rgba(242, 230, 230, 0.60);
+  opacity: 80%;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: black;
+  text-align: start;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.post-body {
+  height: 40%;
+  resize: none;
+}
+
+.btn-post {
+  margin-top: 1%;
+  position: relative;
+  left: calc(40% - 10%);
+}
+
+.open {
+  position: absolute;
+  top: 0.5rem;
+  left: 1.2rem;
+}
+
+.open div {
+  width: 30px;
+  height: 4px;
+  background-color: #B4A5A5;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+/*All Posts*/
+.post {
+  padding: 5%;
+  margin-top: 50px;
+  width: 90%;
+}
+
+.div-user-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.user-post-photo {
+  width: 19%;
+  height: 19%;
+  align-self: center;
+}
+
+.author {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.7rem;
+  background-color: none;
+  width: 57%;
+}
+
+.title-post {
+  font-size: 1rem;
+  color: #DAC7C7;
+  border-radius: 5rem;
+  background-color: #301b3fb6;
+  display: flex;
+  justify-content: center;
+  text-shadow: none;  
+}
+
+.content {
+  background-color: rgba(242, 230, 230, 0.60);
+  border-radius: 10px;
+  padding: 3%;
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+  color:#301B3F;
+}
+
+.div-bottom-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 1.7rem;
+  margin-top: 1rem;
+}
+
+.div-reaction {
+  background-color: #301B3F;
+  border-radius: 10px;
+  width: 4.5rem;
+  height: 1.7rem;
+  display: flex;
+  justify-content: center;
+}
+
+.div-delete-edit {
+  display: flex;
+  justify-content: space-around;
+  width: 4.7rem;
+}
+
+.reaction-button {
+  text-decoration: none;
+  color: #B4A5A5;
+  border: none;
+  background: #301B3F;
+}
+
+.img-endPost{
+  width: 20px;
+  height: 20px;
+}
+
+/*NAVBAR*/
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30%;
+  font-family: 'Glegoo', serif;
+  border-radius: 10px;
+  padding: 3px;
+  border: none;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.nav-links a {
+  display: flex;
+  flex-direction: row;
+  font-size: medium;
+}
+
+.sidenav {
+  height: 115vh;
+  width: 45vw;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: #1B1021;
+  padding-top: 5rem;
+  transition: 0.5s;
+  display: none;
+  justify-content: space-evenly;
+}
+
+.sidenav .gg-close-o {
+  position: absolute;
+  margin-bottom: 12%;
+  color: #B4A5A5;
+  cursor: pointer;
+}
+
+.buttons-nav:hover,
+.sidenav .gg-close-o:hover,
+.sign-out-button:hover {
+  color: #f1f1f1;
+}
+
+.buttons-nav, .sign-out-button {
+  font-family: 'Glegoo', serif;
+  background: none;
+  border: none;
+  color: #B4A5A5;
+  font-size: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  margin-top: 14rem;
+}
+
+.icon-navbar {
+  width: 27px;
+  height: 27px;
+  padding: 5px;
+}
+
+.icon-navbar-sign-out {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  margin-left: 3px;
+}
+
+.div-profile,
+.div-home,
+.user-posts,
+.div-new-posts,
+.sign-out-div {
+  display: flex;
+  justify-content:start;
+  flex-direction: row;
+  padding: 8px;
+}
+
+.sign-out-div {
+  margin-top: 30px;
+}
+
+/* PERFIL */
+.main-perfil{
+  background-color: rgba(180, 165, 165, 0.60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 6.5%;
+  text-align: center;
+  font-family: 'Glegoo', serif;
+  
+}
+
+.div-info-user {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 50rem;
+  width: 18rem;
+  margin-top: 3rem;
+}
+
+.photo-user{
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  border: solid #1B1021;
+  border-style:groove;
+  border-width: 0.2rem;
+}
+
+.user-photo-img{
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  border-width: 0.2rem;
+}
+
+.user-noPhoto{
+  width: 25%;
+  height: auto;
+  border-width: 0.2rem;
+  margin-top: 2.2rem;
+}
+
+.name-user, .mail-user{
+  background-color: #B4A5A5;
+  border-radius: 10rem;
+  border: none;
+  height: 2rem;
+  width: 100%;
+  font-size: 1rem;
+  color:#301B3F;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+
+.div-email-text, .div-name-text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  width: auto;
+}
+
+.text-input{
+  display: flex;
+  align-items: start;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #301B3F;
+  width: 18rem;
+}
+}
 
 @media (max-width: 1920px) and (min-width: 1025px) {
 /*HOME*/
