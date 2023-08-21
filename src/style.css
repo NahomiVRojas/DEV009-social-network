@@ -47,7 +47,8 @@ h1 {
 
 .btn-home-login,
 .btn-home-join,
-.btn-home-google {
+.btn-home-google,
+.button-back {
   font-family: 'Glegoo', serif;
   color: #301B3F;
   background-color: #B4A5A5;
@@ -281,6 +282,7 @@ form {
   height: 30px;
   font-family: 'Glegoo', serif;
   font-size: 0.7rem;
+  cursor: pointer;
 }
 
 .gg-close-o {
@@ -288,6 +290,7 @@ form {
   position: absolute;
   left: 80%;
   bottom: 46rem;
+  cursor: pointer;
 }
 
 .gg-close-o:hover {
@@ -486,6 +489,7 @@ form {
   flex-direction: row;
   font-size: medium;
   padding: 5px;
+  cursor: pointer;
 }
 
 .sidenav .gg-close-o {
@@ -501,6 +505,7 @@ form {
   border: none;
   color: #B4A5A5;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .buttons-nav:hover,
@@ -1276,10 +1281,6 @@ h3 {
   font-size: 1rem;
 }
 
-.cancel-ok-button {
-  margin-left: 4.5rem;
-}
-
 /*TIMELINE*/
 .timeline-title {
   font-size: 2rem;
@@ -1351,11 +1352,13 @@ h3 {
 
 .reaction-button {
   font-size: large;
+  cursor: pointer;
 }
 
 .img-endPost{
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 
 /*NAVBAR*/

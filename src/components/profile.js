@@ -1,5 +1,10 @@
 import { auth, onAuthStateChanged } from '../firebase/initializeFirebase.js';
 import { signOutSession } from '../lib/index.js';
+import navHome from './images/home.png';
+import navUser from './images/user.png';
+import navPosts from './images/posts.png';
+import navSignOut from './images/sign-out.png';
+import logo from './images/logo.png';
 
 function profile(navigateTo) {
   const main = document.createElement('main');
@@ -37,7 +42,7 @@ function profile(navigateTo) {
   home.className = 'buttons-nav';
 
   const iconHome = document.createElement('img');
-  iconHome.src = 'components/images/Home.png';
+  iconHome.src = navHome;
   iconHome.className = 'icon-navbar';
 
   divHome.append(iconHome, home);
@@ -51,7 +56,7 @@ function profile(navigateTo) {
   profileSection.className = 'buttons-nav';
 
   const iconProfile = document.createElement('img');
-  iconProfile.src = 'components/images/Usuario.png';
+  iconProfile.src = navUser;
   iconProfile.className = 'icon-navbar';
 
   divProfile.append(iconProfile, profileSection);
@@ -65,7 +70,7 @@ function profile(navigateTo) {
   userPosts.className = 'buttons-nav';
 
   const iconUserPosts = document.createElement('img');
-  iconUserPosts.src = 'components/images/Post.png';
+  iconUserPosts.src = navPosts;
   iconUserPosts.className = 'icon-navbar';
 
   divUserPosts.append(iconUserPosts, userPosts);
@@ -77,7 +82,7 @@ function profile(navigateTo) {
   signOutDiv.className = 'sign-out-div';
   signOutButton.className = 'sign-out-button';
   signOutButton.textContent = 'Cerrar Sesión';
-  signOutIcon.src = 'components/images/button-sign-out.png';
+  signOutIcon.src = navSignOut;
   signOutIcon.className = 'icon-navbar-sign-out';
   signOutDiv.addEventListener('click', () => {
     signOutSession()
@@ -134,7 +139,7 @@ function profile(navigateTo) {
       userphoto.appendChild(userPhotoImg);
     } if (user && !user.photoURL) {
       const sinUserPhoto = document.createElement('img');
-      sinUserPhoto.src = 'components/images/logo.png';
+      sinUserPhoto.src = logo;
       sinUserPhoto.className = 'user-noPhoto';
       userphoto.appendChild(sinUserPhoto);
     } if (user && user.email) {
