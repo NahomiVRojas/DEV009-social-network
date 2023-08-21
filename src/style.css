@@ -991,26 +991,6 @@ form {
 }
 
 /*NAVBAR*/
-
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  margin-top: 30%;
-  font-family: 'Glegoo', serif;
-  border-radius: 10px;
-  padding: 3px;
-  border: none;
-  font-size: 0.9rem;
-  text-align: center;
-  margin-left: 8px;
-}
-
-.nav-links a {
-  display: flex;
-  flex-direction: row;
-  font-size: medium;
-}
-
 .sidenav {
   height: 115vh;
   width: 45vw;
@@ -1024,17 +1004,17 @@ form {
   justify-content: space-evenly;
 }
 
+.nav-links a {
+  display: flex;
+  flex-direction: row;
+  font-size: medium;
+}
+
 .sidenav .gg-close-o {
   position: absolute;
   margin-bottom: 12%;
   color: #B4A5A5;
   cursor: pointer;
-}
-
-.buttons-nav:hover,
-.sidenav .gg-close-o:hover,
-.sign-out-button:hover {
-  color: #f1f1f1;
 }
 
 .buttons-nav, .sign-out-button {
@@ -1043,6 +1023,12 @@ form {
   border: none;
   color: #B4A5A5;
   font-size: 1rem;
+}
+
+.buttons-nav:hover,
+.sidenav .gg-close-o:hover,
+.sign-out-button:hover {
+  color: #f1f1f1;
 }
 
 .nav-links {
