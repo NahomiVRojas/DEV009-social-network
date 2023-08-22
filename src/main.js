@@ -23,14 +23,14 @@ const defaultRoute = '/';
 function navigateTo(hash) {
   const route = routes.find((routeFound) => routeFound.path === hash);
 
-  if (route && route.component) {
-    window.history.pushState({}, route.path, window.location.origin + route.path);
+  if (route && route.component) { // Si encuentra una ruta válida
+    window.history.pushState({}, route.path, window.location.origin + route.path); // Actualiza la URL del navegador usando window.history.pushState()
     if (root.firstChild) {
-      root.removeChild(root.firstChild);
+      root.removeChild(root.firstChild); // Elimina cualquier componente existente en el elemento con ID "root"
     }
-    root.append(route.component(navigateTo));
+    root.append(route.component(navigateTo)); // Agrega el componente correspondiente
   } else {
-    navigateTo('/error');
+    navigateTo('/error'); // Si no se encuentra una ruta válida, redirige al usuario a la página de error
   }
 }
 

@@ -1,5 +1,4 @@
 import { logInWithGoogle } from '../lib/index.js';
-import logo from './images/logo.png';
 
 function home(navigateTo) {
   const main = document.createElement('main');
@@ -11,9 +10,9 @@ function home(navigateTo) {
   slogan.setAttribute('id', 'slogan-home');
   slogan.textContent = '¡Donde las pesadillas se comparten!';
 
-  const logoImg = document.createElement('img');
-  logoImg.src = logo;
-  logoImg.setAttribute('id', 'logo-home');
+  const logo = document.createElement('img');
+  logo.src = 'components/images/logo.png';
+  logo.setAttribute('id', 'logo-home');
 
   const login = document.createElement('button');
   login.className = 'btn-home-login';
@@ -39,7 +38,7 @@ function home(navigateTo) {
       });
   });
 
-  main.append(title, slogan, logoImg, login, join, loginGoogle);
+  main.append(title, slogan, logo, login, join, loginGoogle);
 
   return main;
 }

@@ -1,5 +1,4 @@
 import { logInWithEmail, resetPassword } from '../lib/index.js';
-import logo from './images/logo.png';
 
 function login(navigateTo) {
   const main = document.createElement('main');
@@ -8,7 +7,7 @@ function login(navigateTo) {
   title.textContent = 'Ingrese al SpookyVerse';
 
   const logologin = document.createElement('img');
-  logologin.src = logo;
+  logologin.src = 'components/images/logo.png';
   logologin.setAttribute('id', 'logo-login-join');
 
   const loginForm = document.createElement('form');

@@ -4,10 +4,6 @@ import {
   createPost,
   displayAllPosts,
 } from '../lib/index.js';
-import navHome from './images/home.png';
-import navUser from './images/user.png';
-import navPosts from './images/posts.png';
-import navSignOut from './images/sign-out.png';
 
 function timeline(navigateTo) {
   displayAllPosts();
@@ -47,7 +43,7 @@ function timeline(navigateTo) {
   home.className = 'buttons-nav';
 
   const iconHome = document.createElement('img');
-  iconHome.src = navHome;
+  iconHome.src = 'components/images/Home.png';
   iconHome.className = 'icon-navbar';
 
   divHome.append(iconHome, home);
@@ -61,7 +57,7 @@ function timeline(navigateTo) {
   profile.className = 'buttons-nav';
 
   const iconProfile = document.createElement('img');
-  iconProfile.src = navUser;
+  iconProfile.src = 'components/images/Usuario.png';
   iconProfile.className = 'icon-navbar';
 
   divProfile.append(iconProfile, profile);
@@ -75,7 +71,7 @@ function timeline(navigateTo) {
   userPosts.className = 'buttons-nav';
 
   const iconUserPosts = document.createElement('img');
-  iconUserPosts.src = navPosts;
+  iconUserPosts.src = 'components/images/Post.png';
   iconUserPosts.className = 'icon-navbar';
 
   divUserPosts.append(iconUserPosts, userPosts);
@@ -87,7 +83,7 @@ function timeline(navigateTo) {
   signOutDiv.className = 'sign-out-div';
   signOutButton.className = 'sign-out-button';
   signOutButton.textContent = 'Cerrar Sesión';
-  signOutIcon.src = navSignOut;
+  signOutIcon.src = 'components/images/button-sign-out.png';
   signOutIcon.className = 'icon-navbar-sign-out';
   signOutDiv.addEventListener('click', () => {
     signOutSession()

@@ -1,5 +1,4 @@
 import { createAccount } from '../lib/index.js';
-import logo from './images/logo.png';
 
 function join(navigateTo) {
   const main = document.createElement('main');
@@ -8,7 +7,7 @@ function join(navigateTo) {
   title.textContent = 'Únete al SpookyVerse';
 
   const logoLogin = document.createElement('img');
-  logoLogin.src = logo;
+  logoLogin.src = 'components/images/logo.png';
   logoLogin.setAttribute('id', 'logo-login-join');
 
   const joinForm = document.createElement('form');
